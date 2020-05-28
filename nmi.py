@@ -1,6 +1,7 @@
 import itertools
 import math
 import sys
+#function to compute the jaccard similarity
 def jaccard(label1, label2):
     n = len(label1)
     n11 = n10 = n01 = 0
@@ -17,6 +18,7 @@ def jaccard(label1, label2):
             n01+=1
     
     return float(n11)/ (n11+n10+n01)
+#Steps to compute NMI
 
 def get_cluster_dict(label1, label2):
     #label1.sort()
