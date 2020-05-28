@@ -108,7 +108,7 @@ def print_ans(nmi, jac):
     
 def calculate_similarity():
     
-    file = sys.stdin.readlines()
+    file = open("input_jaccard.txt","r")
     
     data = []
     ground_truth = []
